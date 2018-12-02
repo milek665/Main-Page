@@ -12,9 +12,6 @@
   height: 100%;
   z-index: -1; }
 
-.flags {
-  border-radius: 50%; }
-
 body {
   background-color: #333;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -25,6 +22,8 @@ body {
   body .container {
     background-color: #700;
     color: #FFF; }
+    body .container .flags {
+      border-radius: 50%; }
     body .container .jumbotron {
       background-color: #1A1D21;
       padding-top: 1%; }
@@ -47,7 +46,10 @@ body {
           transition: transform 0.3s ease-in-out, color 0.8s ease-in-out; }
           body .container .jumbotron .navbar a:hover {
             transform: scaleY(1.5);
-            color: #700; }
+            color: #110; }
+      body .container .jumbotron .nav-color {
+        background-color: #900;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
       body .container .jumbotron h3 {
         font-size: 2.5rem;
         padding-bottom: 5%;

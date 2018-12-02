@@ -19,10 +19,6 @@ $color2: #700;
     z-index: -1;
 }
 
-.flags {
-    border-radius: 50%;
-}
-
 body {
     background-color: #333;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -34,6 +30,10 @@ body {
     .container {
         background-color: #700;
         color: $color;
+
+        .flags {
+            border-radius: 50%;
+        }
 
         .jumbotron {
             background-color: #1A1D21;
@@ -64,9 +64,14 @@ body {
 
                     &:hover {
                         transform: scaleY(1.5);
-                        color: $color2;
+                        color: #110;
                     }
                 }
+            }
+
+            .nav-color {
+                background-color: #900;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             }
 
             h3 {
