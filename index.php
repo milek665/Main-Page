@@ -16,24 +16,23 @@
 </head>
 
 <body>
+    <?php
+        $web=$_SERVER['SCRIPT_NAME'];
+        $languages[]="polish";
+        $languages[]="english";
+        $languages[]="spanish";
+        $languages[]="deutsch";
+        if(!in_array($_GET['lang'], $languages)){
+            header("Location: $web?lang=polish");
+        }
+        $id = $_GET["lang"];
+        if(file_exists("languages/".$id.".php")){
+            include("languages/".$id.".php");
+        }
+    ?>
     <div id="particles-js"></div>
     <div class="container">
-        <?php
-            //$web=$_SERVER['SCRIPT_NAME'];
-            $languages[]="polish";
-            $languages[]="english";
-            $languages[]="spanish";
-            $languages[]="deutsch";
-            if(!in_array($_GET['lang'], $languages)){
-                header('Location:   index.php?lang=polish');
-            }
-            
-        
-            $id = $_GET["lang"];
-            if(file_exists("languages/".$id.".php")){
-                include("languages/".$id.".php");
-            }
-        ?>
+
         <div class="col text-right">
             <?php echo $languageSection ?>
             <a href="index.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
@@ -45,14 +44,14 @@
             <div class="jumbotron">
                 <h1><a href="index.php">E-games</a></h1>
                 <nav class="nav-color navbar navbar-expand-lg navbar-light bg-default">
-                    <a class="navbar-brand" href="aboutTheSite.html">
+                    <a class="navbar-brand" href="aboutTheSite.php">
                         <?php echo $menu[0] ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <a class="navbar-brand" href="gallery.html">
+                            <a class="navbar-brand" href="technologies.php">
                                 <?php echo $menu[1] ?></a>
                             <a class="navbar-brand" href="signIn.php">
                                 <?php echo $menu[2] ?></a>
@@ -73,11 +72,11 @@
                                     <?php echo $kindOfGames[0] ?></span>
                                 <?php echo $kindOfGames[1] ?></a></h3>
                         <dl>
-                            <dt><a href="ticTacToe.html">
+                            <dt><a href="ticTacToe.php">
                                     <?php echo $games[0] ?></a></dt>
-                            <dt><a href="sudoku.html">
+                            <dt><a href="sudoku.php">
                                     <?php echo $games[1] ?></a></dt>
-                            <dt><a href="draughts.html">
+                            <dt><a href="draughts.php">
                                     <?php echo $games[2] ?></a></dt>
                         </dl>
                     </div>
@@ -86,11 +85,11 @@
                                     <?php echo $kindOfGames[0] ?></span>
                                 <?php echo $kindOfGames[2] ?></a></h3>
                         <dl>
-                            <dt><a href="snake.html">
+                            <dt><a href="snake.php">
                                     <?php echo $games[3] ?></a></dt>
-                            <dt><a href="tetris.html">
+                            <dt><a href="tetris.php">
                                     <?php echo $games[4] ?></a></dt>
-                            <dt><a href="arkanoid.html">
+                            <dt><a href="arkanoid.php">
                                     <?php echo $games[5] ?></a></dt>
                         </dl>
                     </div>

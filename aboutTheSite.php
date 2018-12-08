@@ -34,10 +34,10 @@
     <div class="container">
         <div class="col text-right">
             <?php echo $languageSection ?>
-            <a href="signUp.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
-            <a href="signUp.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
-            <a href="signUp.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
-            <a href="signUp.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            <a href="aboutTheSite.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+            <a href="aboutTheSite.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+            <a href="aboutTheSite.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+            <a href="aboutTheSite.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
         </div>
         <div id="main">
             <div class="jumbotron">
@@ -66,32 +66,24 @@
                 </nav>
                 <div class="row">
                     <div class="col text-center">
-                        <form class="form">
-                            <div class="form-group">
-                                <label for="login"><?php echo $loginSystem[0] ?> </label>
-                                <input type="text" class="form-control" id="login" placeholder="<?php echo $loginSystem[0] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="password"><?php echo $loginSystem[1] ?> </label>
-                                <input type="password" class="form-control" id="password" placeholder="<?php echo $loginSystem[1] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="repeatPassword"><?php echo $loginSystem[2] ?> </label>
-                                <input type="password" class="form-control" id="repeatPassword" placeholder="<?php echo $loginSystem[2] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="birthdayYear"><?php echo $loginSystem[3] ?> </label>
-                                <input type="e-mail" class="form-control" id="birthdayYear" placeholder="<?php echo $loginSystem[3] ?>">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check">
-                                <label class="form-check-label" for="check"><?php echo $loginSystem[4] ?></label>
-                            </div>
-                            </br>
-                                <div class="g-recaptcha" data-sitekey="6Ld9mX8UAAAAAHbyx8aCZcP69FTR7HiTuS4_LEdg" ></div>
-                            </br>
-                            <button type="submit" class="btn btn-dark"><?php echo $loginSystem[6] ?></button>
-                        </form>
+                        <h2><?php echo $mainHeader ?></h2>
+                        <h4><?php echo $headers[0] ?></h4>
+                        <p>
+                            <?php echo $articles[0] ?>
+                        </p>
+                        <h4><?php echo $headers[1] ?></h4>
+                        <p>
+                            <?php echo $articles[1] ?>
+                        </p>
+                        <h4><?php echo $headers[2] ?></h4>
+                        <p>
+                            <?php echo $articles[2] ?>
+                        </p>
+                        <h4><?php echo $headers[3] ?></h4>
+                        <p>
+                            <?php echo $articles[3] ?>
+                        </p>
+                        <h4><?php echo $headers[4] ?></h4>
                     </div>
                 </div>
             </div>
@@ -109,7 +101,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>

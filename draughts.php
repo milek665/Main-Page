@@ -16,39 +16,60 @@
 </head>
 
 <body>
+    <?php
+        $web=$_SERVER['SCRIPT_NAME'];
+        $languages[]="polish";
+        $languages[]="english";
+        $languages[]="spanish";
+        $languages[]="deutsch";
+        if(!in_array($_GET['lang'], $languages)){
+            header("Location: $web?lang=polish");
+        }
+        $id = $_GET["lang"];
+        if(file_exists("languages/".$id.".php")){
+            include("languages/".$id.".php");
+        }
+    ?>
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
-            Wybór języka:
-            <img src="img/flags/pl.png" class="flags" alt="no pl">
-            <img src="img/flags/gb.png" class="flags" alt="no gb">
-            <img src="img/flags/es.png" class="flags" alt="no es">
-            <img src="img/flags/de.png" class="flags" alt="no de">
+            <?php echo $languageSection ?>
+            <a href="draughts.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+            <a href="draughts.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+            <a href="draughts.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+            <a href="draughts.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
         </div>
         <div id="main">
             <div class="jumbotron">
                 <h1><a href="index.php">E-games</a></h1>
                 <nav class="nav-color navbar navbar-expand-lg navbar-light bg-default">
-                    <a class="navbar-brand" href="aboutTheSite.html">O stronie</a>
+                    <a class="navbar-brand" href="aboutTheSite.php">
+                        <?php echo $menu[0] ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <a class="navbar-brand" href="gallery.html">Galeria</a>
-                            <a class="navbar-brand" href="signIn.php">Zaloguj się</a>
-                            <a class="navbar-brand" href="signUp.php">Zarejestruj się</a>
+                            <a class="navbar-brand" href="technologies.php">
+                                <?php echo $menu[1] ?></a>
+                            <a class="navbar-brand" href="signIn.php">
+                                <?php echo $menu[2] ?></a>
+                            <a class="navbar-brand" href="signUp.php">
+                                <?php echo $menu[3] ?></a>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Wpisz frazę..." aria-label="Search">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Szukaj</button>
+                            <input class="form-control mr-sm-2" type="search" placeholder="<?php echo $search[0] ?>" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                                <?php echo $search[1] ?></button>
                         </form>
                     </div>
                 </nav>
             </div>
         </div>
         <footer>
-            <p>Wszelkie prawa zastrzeżone &copy</p>
+            <p>
+                <?php echo $footer ?>
+            </p>
         </footer>
     </div>
     <!-- Bootstrap scripts -->
