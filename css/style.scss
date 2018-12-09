@@ -30,6 +30,12 @@ body {
     .container {
         background-color: #700;
         color: $color;
+        
+        #time{
+            width: 50px;
+            position: absolute;
+            left: 0;
+        }
 
         .flags {
             border-radius: 50%;
@@ -88,6 +94,18 @@ body {
                     }
                 }
             }
+            
+            h2{
+                font-size: 3.5rem;
+            }
+            
+            .captcha-center{
+                text-align: center;
+            }
+            
+            .g-recaptcha{
+                display: inline-block;
+            }
 
             dl {
                 font-size: 1.5rem;
@@ -132,6 +150,57 @@ body {
     }
 }
 
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+@mixin position-center($text-align: center) {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: $text-align;
+}
+
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 9999;
+}
+
+.loading-text {
+	@include position-center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	span {
+		display: inline-block;
+		margin: 0 5px;
+		color: $color;
+        font-weight: $weight;
+        text-shadow:0 2px 0 $color2,
+              0 3px 0 $color2,
+              0 3px 4px #b22222;
+    font-family: 'Quattrocento Sans', sans-serif;
+		@for $i from 0 through 17 {
+			&:nth-child(#{$i + 1}) {
+				filter: blur(0px);
+				animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
+			}
+		}
+	}
+}
+
+@keyframes blur-text {
+	0% {filter: blur(0px);}
+	100% {filter: blur(4px);}
+}
+
 @keyframes animationH1 {
     0% {
         letter-spacing: 10px;
@@ -147,6 +216,18 @@ body {
 
     100% {
         letter-spacing: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .g-recaptcha{
+        transform: scale(0.7);
+        position: relative;
+        right: 20px;
+    }
+    
+    .loading-text{
+        font-size: 0.6rem;
     }
 }
 
@@ -168,9 +249,17 @@ body {
         font-size: 0.8rem;
     }
 
-    span:after {
+    span::after {
         content: "\A";
         white-space: pre;
+    }
+    
+    .g-recaptcha{
+        transform: scale(0.73);
+    }
+    
+    .loading-text{
+        font-size: 0.7rem;
     }
 }
 
@@ -191,6 +280,14 @@ body {
     footer p {
         font-size: 1.2rem;
     }
+    
+    .g-recaptcha{
+        transform: scale(0.78);
+    }
+    
+    .loading-text{
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -209,6 +306,14 @@ body {
 
     footer p {
         font-size: 1.5rem;
+    }
+    
+    .g-recaptcha{
+        transform: scale(0.85);
+    }
+    
+    .loading-text{
+        font-size: 0.9rem;
     }
 }
 
@@ -229,6 +334,10 @@ body {
     footer p {
         font-size: 1.8rem;
     }
+    
+    .g-recaptcha{
+        transform: scale(0.93);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -248,4 +357,10 @@ body {
     footer p {
         font-size: 2rem;
     }
+    
+    .g-recaptcha{
+        transform: scale(1.0);
+    }
 }
+
+

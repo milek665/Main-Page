@@ -16,6 +16,28 @@
 </head>
 
 <body>
+<div class="loading">
+	<div class="loading-text">
+		<span class="loading-text-words">L</span>
+		<span class="loading-text-words">O</span>
+		<span class="loading-text-words">A</span>
+		<span class="loading-text-words">D</span>
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">N</span>
+		<span class="loading-text-words">G</span>
+		<span class="loading-text-words"> </span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">-</span>
+		<span class="loading-text-words">G</span>
+		<span class="loading-text-words">A</span>
+		<span class="loading-text-words">M</span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">S</span>
+		<span class="loading-text-words">.</span>
+		<span class="loading-text-words">.</span>
+		<span class="loading-text-words">.</span>
+	</div>
+</div>
     <?php
         $web=$_SERVER['SCRIPT_NAME'];
         $languages[]="polish";
@@ -32,8 +54,8 @@
     ?>
     <div id="particles-js"></div>
     <div class="container">
-
         <div class="col text-right">
+            <span id="time"></span>
             <?php echo $languageSection ?>
             <a href="index.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
             <a href="index.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>

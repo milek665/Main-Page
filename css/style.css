@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +23,10 @@ body {
   body .container {
     background-color: #700;
     color: #FFF; }
+    body .container #time {
+      width: 50px;
+      position: absolute;
+      left: 0; }
     body .container .flags {
       border-radius: 50%; }
     body .container .jumbotron {
@@ -59,6 +64,12 @@ body {
           color: #FFF; }
           body .container .jumbotron h3 a:hover {
             cursor: default; }
+      body .container .jumbotron h2 {
+        font-size: 3.5rem; }
+      body .container .jumbotron .captcha-center {
+        text-align: center; }
+      body .container .jumbotron .g-recaptcha {
+        display: inline-block; }
       body .container .jumbotron dl {
         font-size: 1.5rem; }
         body .container .jumbotron dl dt {
@@ -86,6 +97,93 @@ body {
       letter-spacing: 7px;
       font-weight: 700; }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999; }
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px; }
+  .loading-text span {
+    display: inline-block;
+    margin: 0 5px;
+    color: #FFF;
+    font-weight: 700;
+    text-shadow: 0 2px 0 #700, 0 3px 0 #700, 0 3px 4px #b22222;
+    font-family: 'Quattrocento Sans', sans-serif; }
+    .loading-text span:nth-child(1) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0s infinite linear alternate; }
+    .loading-text span:nth-child(2) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.2s infinite linear alternate; }
+    .loading-text span:nth-child(3) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.4s infinite linear alternate; }
+    .loading-text span:nth-child(4) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.6s infinite linear alternate; }
+    .loading-text span:nth-child(5) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.8s infinite linear alternate; }
+    .loading-text span:nth-child(6) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1s infinite linear alternate; }
+    .loading-text span:nth-child(7) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.2s infinite linear alternate; }
+    .loading-text span:nth-child(8) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.4s infinite linear alternate; }
+    .loading-text span:nth-child(9) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.6s infinite linear alternate; }
+    .loading-text span:nth-child(10) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.8s infinite linear alternate; }
+    .loading-text span:nth-child(11) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 2s infinite linear alternate; }
+    .loading-text span:nth-child(12) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 2.2s infinite linear alternate; }
+    .loading-text span:nth-child(13) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 2.4s infinite linear alternate; }
+    .loading-text span:nth-child(14) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 2.6s infinite linear alternate; }
+    .loading-text span:nth-child(15) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 2.8s infinite linear alternate; }
+    .loading-text span:nth-child(16) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 3s infinite linear alternate; }
+    .loading-text span:nth-child(17) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 3.2s infinite linear alternate; }
+    .loading-text span:nth-child(18) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 3.4s infinite linear alternate; }
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px); }
+  100% {
+    filter: blur(4px); } }
 @keyframes animationH1 {
   0% {
     letter-spacing: 10px; }
@@ -95,6 +193,14 @@ body {
     letter-spacing: 20px; }
   100% {
     letter-spacing: 15px; } }
+@media (max-width: 320px) {
+  .g-recaptcha {
+    transform: scale(0.7);
+    position: relative;
+    right: 20px; }
+
+  .loading-text {
+    font-size: 0.6rem; } }
 @media (max-width: 575px) {
   h1 a {
     font-size: 2.5rem; }
@@ -109,9 +215,15 @@ body {
   footer p {
     font-size: 0.8rem; }
 
-  span:after {
+  span::after {
     content: "\A";
-    white-space: pre; } }
+    white-space: pre; }
+
+  .g-recaptcha {
+    transform: scale(0.73); }
+
+  .loading-text {
+    font-size: 0.7rem; } }
 @media (min-width: 576px) {
   h1 a {
     font-size: 3rem; }
@@ -124,7 +236,13 @@ body {
     font-size: 1rem; }
 
   footer p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+
+  .g-recaptcha {
+    transform: scale(0.78); }
+
+  .loading-text {
+    font-size: 0.8rem; } }
 @media (min-width: 768px) {
   h1 a {
     font-size: 3.5rem; }
@@ -137,7 +255,13 @@ body {
     font-size: 1.5rem; }
 
   footer p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .g-recaptcha {
+    transform: scale(0.85); }
+
+  .loading-text {
+    font-size: 0.9rem; } }
 @media (min-width: 992px) {
   h1 a {
     font-size: 2.5rem; }
@@ -150,7 +274,10 @@ body {
     font-size: 2rem; }
 
   footer p {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+
+  .g-recaptcha {
+    transform: scale(0.93); } }
 @media (min-width: 1200px) {
   h1 a {
     font-size: 4.5rem; }
@@ -163,6 +290,9 @@ body {
     font-size: 2.5rem; }
 
   footer p {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+
+  .g-recaptcha {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=style.css.map */

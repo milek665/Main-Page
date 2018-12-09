@@ -33,6 +33,7 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
+            <span id="time"></span>
             <?php echo $languageSection ?>
             <a href="tetris.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
             <a href="tetris.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
