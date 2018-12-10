@@ -33,12 +33,14 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
-            <span id="time"></span>
-            <?php echo $languageSection ?>
-            <a href="technologies.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
-            <a href="technologies.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
-            <a href="technologies.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
-            <a href="technologies.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            <div class="top">
+                <span id="time"></span>
+                <?php echo $languageSection ?>
+                <a href="technologies.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+                <a href="technologies.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+                <a href="technologies.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+                <a href="technologies.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            </div>
         </div>
         <div id="main">
             <div class="jumbotron">
@@ -65,9 +67,29 @@
                         </form>
                     </div>
                 </nav>
-                <div class="row">
-
-                </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="svg/logo_html.svg" alt="no logo of html" class="logoSVG">
+                        </div>  
+                        <div class="col-6">
+                            <img src="svg/logo_css.svg" alt="no logo of css" class="logoSVG">
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_js.svg" alt="no logo of js" class="logoSVG">   
+                        </div>  
+                        <div class="col-6">
+                            <img src="svg/logo_php.svg" alt="no logo of php" class="logoSVG">       
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_bootstrap.svg" alt="no logo of bootstrap" class="logoSVG">       
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_jquery.svg" alt="no logo of jquery" class="logoSVG">       
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_sass.svg" alt="no logo of sass" class="logoSVG">       
+                        </div>
+                    </div>
             </div>
         </div>
         <footer>

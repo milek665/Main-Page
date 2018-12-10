@@ -33,12 +33,14 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
-            <span id="time"></span>
-            <?php echo $languageSection ?>
-            <a href="aboutTheSite.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
-            <a href="aboutTheSite.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
-            <a href="aboutTheSite.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
-            <a href="aboutTheSite.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            <div class="top">
+                <span id="time"></span>
+                <?php echo $languageSection ?>
+                <a href="aboutTheSite.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+                <a href="aboutTheSite.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+                <a href="aboutTheSite.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+                <a href="aboutTheSite.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            </div>
         </div>
         <div id="main">
             <div class="jumbotron">

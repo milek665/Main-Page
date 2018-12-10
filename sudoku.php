@@ -33,12 +33,14 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
+        <div class="top">
             <?php echo $languageSection ?>
             <span id="time"></span>
             <a href="sudoku.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
             <a href="sudoku.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
             <a href="sudoku.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
             <a href="sudoku.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+        </div>
         </div>
         <div id="main">
             <div class="jumbotron">

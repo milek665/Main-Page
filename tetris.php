@@ -33,12 +33,14 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
-            <span id="time"></span>
-            <?php echo $languageSection ?>
-            <a href="tetris.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
-            <a href="tetris.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
-            <a href="tetris.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
-            <a href="tetris.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            <div class="top">
+                <span id="time"></span>
+                <?php echo $languageSection ?>
+                <a href="tetris.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+                <a href="tetris.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+                <a href="tetris.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+                <a href="tetris.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            </div>
         </div>
         <div id="main">
             <div class="jumbotron">
@@ -55,7 +57,7 @@
                                 <?php echo $menu[1] ?></a>
                             <a class="navbar-brand" href="signIn.php">
                                 <?php echo $menu[2] ?></a>
-                            <a class="navbar-brand" href="signUp.php">Z
+                            <a class="navbar-brand" href="signUp.php">
                                 <?php echo $menu[3] ?></a>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">

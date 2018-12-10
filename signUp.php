@@ -33,12 +33,14 @@
     <div id="particles-js"></div>
     <div class="container">
         <div class="col text-right">
-            <span id="time"></span>
-            <?php echo $languageSection ?>
-            <a href="signUp.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
-            <a href="signUp.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
-            <a href="signUp.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
-            <a href="signUp.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            <div class="top">
+                <span id="time"></span>
+                <?php echo $languageSection ?>
+                <a href="signUp.php?lang=polish"><img src="img/flags/pl.png" class="flags" alt="no pl"></a>
+                <a href="signUp.php?lang=english"><img src="img/flags/gb.png" class="flags" alt="no gb"></a>
+                <a href="signUp.php?lang=spanish"><img src="img/flags/es.png" class="flags" alt="no es"></a>
+                <a href="signUp.php?lang=deutsch"><img src="img/flags/de.png" class="flags" alt="no de"></a>
+            </div>
         </div>
         <div id="main">
             <div class="jumbotron">
@@ -88,11 +90,11 @@
                                 <input type="checkbox" class="form-check-input" id="check">
                                 <label class="form-check-label" for="check"><?php echo $loginSystem[4] ?></label>
                             </div>
-                            </br>
+                            <br/>
                             <div class="captcha-center">
                                 <div class="g-recaptcha" data-sitekey="6Ld9mX8UAAAAAHbyx8aCZcP69FTR7HiTuS4_LEdg"></div>
                             </div>
-                            </br>
+                            <br/>
                             <button type="submit" class="btn btn-dark"><?php echo $loginSystem[6] ?></button>
                         </form>
                     </div>
