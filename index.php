@@ -133,22 +133,22 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/ticTacToe.jpg" alt="no circleAndCross">
+                            <img src="img/ticTacToe.jpg" class="img-thumbnail" alt="no circleAndCross">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/sudoku.png" alt="no sudoku">
+                            <img src="img/sudoku.png" class="img-thumbnail" alt="no sudoku">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/draughts.jpg" alt="no draughts">
+                            <img src="img/draughts.jpg" class="img-thumbnail" alt="no draughts">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/snake.jpg" alt="no snake">
+                            <img src="img/snake.jpg" class="img-thumbnail" alt="no snake">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/tetris.jpg" alt="no tetris">
+                            <img src="img/tetris.jpg" class="img-thumbnail" alt="no tetris">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/arkanoid.gif" alt="no arkanoid">
+                            <img src="img/arkanoid.gif" class="img-thumbnail" alt="no arkanoid">
                         </div>
                     </div>
 

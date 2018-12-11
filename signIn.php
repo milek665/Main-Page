@@ -69,17 +69,17 @@
                 </nav>
                 <div class="row">
                     <div class="col text-center">
-                        <form>
+                        <form method="post" action="sys/signIn.php">
                             <div class="form-group">
-                                <label for="login"><?php echo $loginSystem[0] ?></label>
-                                <input type="text" class="form-control" id="login" placeholder="<?php echo $loginSystem[0] ?>">
+                                <label for="login"><?php echo $loginSystem[0]." ".$loginSystem[1]." ".strtolower($loginSystem[2]) ?></label>
+                                <input type="text" name="email" class="form-control" id="login" placeholder="<?php echo $loginSystem[0]." ".$loginSystem[1]." ".strtolower($loginSystem[2]) ?>">
                             </div>
                             <div class="form-group">
-                                <label for="password"><?php echo $loginSystem[1] ?> </label>
-                                <input type="password" class="form-control" id="password" placeholder="<?php echo $loginSystem[1] ?>">
+                                <label for="password"><?php echo $loginSystem[3] ?> </label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="<?php echo $loginSystem[3] ?>">
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-dark"><?php echo $loginSystem[5] ?></button>
+                            <button type="submit" name="signIn" class="btn btn-dark"><?php echo $loginSystem[7] ?></button>
                         </form>
 
                     </div>

@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $('.loading').delay(3000).fadeOut("slow");
+});
+
 $("h3").on({
     'mouseover': function() {
         $(this).stop().animate({opacity: 0.5}, 500);
@@ -7,23 +11,19 @@ $("h3").on({
     }
 });
 
-$(document).ready(function(){
-    $('.loading').delay(3000).fadeOut("slow");
-});
-
 function clock(){
     now = new Date();
-    var hours = now.getHours();
-    var min = now.getMinutes();
-    var sec = now.getSeconds();
+    let hours = now.getHours();
+    let min = now.getMinutes();
+    let sec = now.getSeconds();
     if (hours < 10){
-        hours = "0" + hours;
+        hours += "0";
     } 
     if (min < 10){
-        min = "0" + min;
+        min += "0";
     } 
     if (sec < 10){
-        sec = "0" + sec;
+        sec += "0";
     } 
     document.getElementById('time').innerHTML = hours + ":" + min + ":" + sec;
     setTimeout("clock()", 1000);
