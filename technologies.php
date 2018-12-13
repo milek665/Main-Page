@@ -72,22 +72,25 @@
                             <img src="svg/logo_html.svg" alt="no logo of html" class="logoSVG">
                         </div>  
                         <div class="col-6">
+                            <img src="svg/logo_bootstrap.svg" alt="no logo of bootstrap" class="logoSVG">       
+                        </div>
+                        <div class="col-6">
                             <img src="svg/logo_css.svg" alt="no logo of css" class="logoSVG">
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_sass.svg" alt="no logo of sass" class="logoSVG">       
                         </div>
                         <div class="col-6">
                             <img src="svg/logo_js.svg" alt="no logo of js" class="logoSVG">   
                         </div>  
                         <div class="col-6">
-                            <img src="svg/logo_php.svg" alt="no logo of php" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_bootstrap.svg" alt="no logo of bootstrap" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
                             <img src="svg/logo_jquery.svg" alt="no logo of jquery" class="logoSVG">       
                         </div>
                         <div class="col-6">
-                            <img src="svg/logo_sass.svg" alt="no logo of sass" class="logoSVG">       
+                            <img src="svg/logo_php.svg" alt="no logo of php" class="logoSVG">       
+                        </div>
+                        <div class="col-6">
+                            <img src="svg/logo_git.svg" alt="no logo of git" class="logoSVG">       
                         </div>
                     </div>
             </div>

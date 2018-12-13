@@ -72,32 +72,35 @@
                         <form method="post" action="sys/registration.php">
                             <div class="form-group">
                                 <label for="login"><?php echo $loginSystem[0] ?> </label>
-                                <input type="text" name="login" class="form-control" id="login" placeholder="<?php echo $loginSystem[0] ?>">
+                                <input type="text" pattern="^[_A-z0-9]{1,}$" name="login" class="form-control" id="login" placeholder="<?php echo $loginSystem[0] ?>" required>
                             </div>
                             <div class="form-group">
                                 <label for="email"><?php echo $loginSystem[2] ?> </label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="<?php echo $loginSystem[2] ?>">
+                                <input type="email" name="email" class="form-control" id="email" data-error="The email address is invalid" placeholder="<?php echo $loginSystem[2] ?>" required>
                             </div>
                             <div class="form-group">
                                 <label for="password"><?php echo $loginSystem[3] ?> </label>
-                                <input type="password" name="password" class="form-control" id="password" placeholder="<?php echo $loginSystem[3] ?>">
+                                <input type="password" name="password" class="form-control" id="password" placeholder="<?php echo $loginSystem[3] ?>" required>
                             </div>
                             <div class="form-group">
                                 <label for="repeatPassword"><?php echo $loginSystem[4] ?> </label>
-                                <input type="password" class="form-control" id="repeatPassword" placeholder="<?php echo $loginSystem[4] ?>">
+                                <input type="password" name="repeatPassword" class="form-control" id="repeatPassword" data-match="#password" data-match-error="Passwords do not match" placeholder="<?php echo $loginSystem[4] ?>" required>
                             </div>
                             <div class="form-group">
                                 <label for="birthdayYear"><?php echo $loginSystem[5] ?> </label>
-                                <input type="number" name="year" class="form-control" id="birthdayYear" placeholder="<?php echo $loginSystem[5] ?>" min="1900" max="<?php echo date('Y') - 7?>">
+                                <input type="number" name="year" class="form-control" id="birthdayYear" placeholder="<?php echo $loginSystem[5] ?>" min="1900" max="<?php echo date('Y') - 7?>" required>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check">
+                                <input type="checkbox" name="rules" class="form-check-input" id="check" required>
                                 <label class="form-check-label" for="check"><?php echo $loginSystem[6] ?></label>
                             </div>
                             <br/>
-                            <div class="captcha-center">
-                                <div class="g-recaptcha" data-sitekey="6Ld9mX8UAAAAAHbyx8aCZcP69FTR7HiTuS4_LEdg"></div>
+                            <div class="form-group">
+                                <div class="captcha-center">
+                                    <div class="g-recaptcha" data-sitekey="6Ld9mX8UAAAAAHbyx8aCZcP69FTR7HiTuS4_LEdg"></div>
+                                </div>
                             </div>
+                            <small><strong>*</strong><?php echo $loginSystem[9] ?></small>
                             <br/>
                             <button type="submit" name="register" class="btn btn-dark"><?php echo $loginSystem[8] ?></button>
                         </form>
