@@ -11,6 +11,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="icon/icon.ico" />
 </head>
@@ -68,30 +69,53 @@
                     </div>
                 </nav>
                     <div class="row">
-                        <div class="col-6">
-                            <img src="svg/logo_html.svg" alt="no logo of html" class="logoSVG">
-                        </div>  
-                        <div class="col-6">
-                            <img src="svg/logo_bootstrap.svg" alt="no logo of bootstrap" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_css.svg" alt="no logo of css" class="logoSVG">
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_sass.svg" alt="no logo of sass" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_js.svg" alt="no logo of js" class="logoSVG">   
-                        </div>  
-                        <div class="col-6">
-                            <img src="svg/logo_jquery.svg" alt="no logo of jquery" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_php.svg" alt="no logo of php" class="logoSVG">       
-                        </div>
-                        <div class="col-6">
-                            <img src="svg/logo_git.svg" alt="no logo of git" class="logoSVG">       
-                        </div>
+                            <div class="col-6">
+                                <div data-aos="fade-right">
+                                    <img src="svg/logo_html.svg" alt="no logo of html" class="logoSVG">
+                                </div>
+                            </div>  
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-left">
+                                    <img src="svg/logo_bootstrap.svg" alt="no logo of bootstrap" class="logoSVG">   
+                                </div>    
+                            </div>
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-right">
+                                    <img src="svg/logo_css.svg" alt="no logo of css" class="logoSVG">
+                                </div>
+                            </div>
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-left">
+                                    <img src="svg/logo_sass.svg" alt="no logo of sass" class="logoSVG">    
+                                </div>   
+                            </div>
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-right">
+                                    <img src="svg/logo_js.svg" alt="no logo of js" class="logoSVG">  
+                                </div> 
+                            </div>  
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-left">
+                                    <img src="svg/logo_jquery.svg" alt="no logo of jquery" class="logoSVG">   
+                                </div>    
+                            </div>
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-right">
+                                    <img src="svg/logo_php.svg" alt="no logo of php" class="logoSVG">   
+                                </div>    
+                            </div>
+                        
+                            <div class="col-6">
+                                <div data-aos="fade-left">
+                                    <img src="svg/logo_git.svg" alt="no logo of git" class="logoSVG">    
+                                </div>   
+                            </div>
                     </div>
             </div>
         </div>
@@ -109,6 +133,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
