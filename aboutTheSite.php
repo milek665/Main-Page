@@ -54,7 +54,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <a class="navbar-brand" href="technologies.php">
-                                <?php echo $menu[1] ?></a>
+                                <?php echo $menu[1] ?></a> 
                             <a class="navbar-brand" href="signIn.php">
                                 <?php echo $menu[2] ?></a>
                             <a class="navbar-brand" href="signUp.php">
@@ -69,24 +69,24 @@
                 </nav>
                 <div class="row">
                     <div class="col text-center">
-                        <h2><?php echo $mainHeader ?></h2>
-                        <h4><?php echo $headers[0] ?></h4>
-                        <p>
-                            <?php echo $articles[0] ?>
-                        </p>
-                        <h4><?php echo $headers[1] ?></h4>
-                        <p>
-                            <?php echo $articles[1] ?>
-                        </p>
-                        <h4><?php echo $headers[2] ?></h4>
-                        <p>
-                            <?php echo $articles[2] ?>
-                        </p>
-                        <h4><?php echo $headers[3] ?></h4>
-                        <p>
-                            <?php echo $articles[3] ?>
-                        </p>
-                        <h4><?php echo $headers[4] ?></h4>
+                        <h2><?php echo $mainHeader ?><div class="type"></div></h2>
+                            <h4><?php echo $headers[0] ?></h4>
+                            <p>
+                                <?php echo $articles[0] ?>
+                            </p>
+                            <h4><?php echo $headers[1] ?></h4>
+                            <p>
+                                <?php echo $articles[1] ?>
+                            </p>
+                            <h4><?php echo $headers[2] ?></h4>
+                            <p>
+                                <?php echo $articles[2] ?>
+                            </p>
+                            <h4><?php echo $headers[3] ?></h4>
+                            <p>
+                                <?php echo $articles[3] ?>
+                            </p>
+                            <h4><?php echo $headers[4] ?></h4>
                     </div>
                 </div>
             </div>
@@ -105,6 +105,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/typing.js"></script>
 </body>
 
 </html>
