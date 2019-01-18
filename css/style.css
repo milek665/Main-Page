@@ -33,7 +33,7 @@
 body {
   background-color: #333;
   font-family: 'Open Sans Condensed', sans-serif;
-  background: url("../img/fire.jpg") no-repeat;
+  background: url("../img/slider/fire.jpg") no-repeat;
   background-size: cover;
   opacity: 0.95;
   min-width: 150px; }
@@ -117,6 +117,20 @@ body {
       font-size: 1.3rem;
       letter-spacing: 7px;
       font-weight: 700; }
+      body .container footer .fab-trans {
+        transition: all 1s ease; }
+        body .container footer .fab-trans:hover {
+          transform: rotate(360deg); }
+        body .container footer .fab-trans:nth-of-type(1):hover {
+          color: #3b5998; }
+        body .container footer .fab-trans:nth-of-type(2):hover {
+          color: #0084ff; }
+        body .container footer .fab-trans:nth-of-type(3):hover {
+          color: #ff0000; }
+        body .container footer .fab-trans:nth-of-type(4):hover {
+          color: #FFFC00; }
+        body .container footer .fab-trans:nth-of-type(5):hover {
+          color: #211F1F; }
 
 .loading {
   position: fixed;

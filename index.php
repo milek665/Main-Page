@@ -11,6 +11,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="icon/icon.ico" />
 </head>
@@ -119,7 +120,6 @@
                     </div>
                 </div>
                 <hr />
-                <div class="text-center" id="show">0px</div>
                 <!-- slider -->
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -134,22 +134,22 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/ticTacToe.jpg" class="img-thumbnail" alt="no circleAndCross">
+                            <img src="img/slider/ticTacToe.jpg" class="img-thumbnail" alt="no circleAndCross">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/sudoku.png" class="img-thumbnail" alt="no sudoku">
+                            <img src="img/slider/sudoku.png" class="img-thumbnail" alt="no sudoku">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/draughts.jpg" class="img-thumbnail" alt="no draughts">
+                            <img src="img/slider/draughts.jpg" class="img-thumbnail" alt="no draughts">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/snake.jpg" class="img-thumbnail" alt="no snake">
+                            <img src="img/slider/snake.jpg" class="img-thumbnail" alt="no snake">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/tetris.jpg" class="img-thumbnail" alt="no tetris">
+                            <img src="img/slider/tetris.jpg" class="img-thumbnail" alt="no tetris">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/arkanoid.gif" class="img-thumbnail" alt="no arkanoid">
+                            <img src="img/slider/arkanoid.gif" class="img-thumbnail" alt="no arkanoid">
                         </div>
                     </div>
 
@@ -165,6 +165,12 @@
         <footer>
             <p>
                 <?php echo $footer ?>
+                <br>
+                <i class="fab-trans fab fa-facebook-square"></i>
+                <i class="fab-trans fab fa-facebook-messenger"></i>
+                <i class="fab-trans fab fa-youtube"></i>
+                <i class="fab-trans fab fa-snapchat-ghost"></i>
+                <i class="fab-trans fab fa-github"></i>
             </p>
         </footer>
     </div>

@@ -11,6 +11,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="icon/icon.ico" />
 </head>
@@ -75,6 +76,12 @@
         <footer>
             <p>
                 <?php echo $footer ?>
+                <br>
+                <i class="fab-trans fab fa-facebook-square"></i>
+                <i class="fab-trans fab fa-facebook-messenger"></i>
+                <i class="fab-trans fab fa-youtube"></i>
+                <i class="fab-trans fab fa-snapchat-ghost"></i>
+                <i class="fab-trans fab fa-github"></i>
             </p>
         </footer>
     </div>

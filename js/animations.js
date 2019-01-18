@@ -30,7 +30,3 @@ function clock(){
 }
 
 onLoad = clock();
-
-window.addEventListener("scroll", function(){
-    document.getElementById("show").innerHTML = Math.round(pageYOffset) + "px";
-});

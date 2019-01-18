@@ -42,7 +42,7 @@ $color4: #500;
 body {
     background-color: #333;
     font-family: 'Open Sans Condensed', sans-serif;
-    background: url("../img/fire.jpg") no-repeat;
+    background: url("../img/slider/fire.jpg") no-repeat;
     background-size: cover;
     opacity: 0.95;
     min-width: 150px;
@@ -168,6 +168,27 @@ body {
             font-size: 1.3rem;
             letter-spacing: 7px;
             font-weight: $weight;
+            .fab-trans{
+                transition: all 1s ease;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+                &:nth-of-type(1):hover{
+                    color: #3b5998;
+                }
+                &:nth-of-type(2):hover{
+                    color: #0084ff,
+                }
+                &:nth-of-type(3):hover{
+                    color: #ff0000;
+                }
+                &:nth-of-type(4):hover{
+                    color: #FFFC00;
+                }
+                &:nth-of-type(5):hover{
+                    color: #211F1F;
+                }
+            }
         }
     }
 }
