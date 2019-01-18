@@ -2,12 +2,32 @@ $decoration: none;
 $weight: 700;
 $color: #FFF;
 $color2: #700;
+$color3: #000;
+$color4: #500;
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        border-left: 1px solid $color2;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $color2;
+        box-shadow: inset 0 0 6px $color3;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: $color4;
+        box-shadow: inset 0 0 6px $color3;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: $color2;
+    } 
 
 #particles-js {
     background-color: #0c0000;
@@ -26,11 +46,9 @@ body {
     background-size: cover;
     opacity: 0.95;
     min-width: 150px;
-
     .container {
         background-color: #700;
         color: $color;
-        
         #time{
             width: 50px;
             position: absolute;
@@ -63,11 +81,9 @@ body {
 
             .navbar {
                 margin-bottom: 5%;
-
                 a {
                     color: $color;
                     transition: transform 0.3s ease-in-out, color 0.8s ease-in-out;
-
                     &:hover {
                         transform: scaleY(1.5);
                         color: #110;
@@ -175,7 +191,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: $color3;
 	z-index: 9999;
 }
 

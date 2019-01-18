@@ -4,6 +4,23 @@
   margin: 0;
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 6px; }
+
+::-webkit-scrollbar-track {
+  border-left: 1px solid #700; }
+
+::-webkit-scrollbar-thumb {
+  background: #700;
+  box-shadow: inset 0 0 6px #000; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #500;
+  box-shadow: inset 0 0 6px #000; }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #700; }
+
 #particles-js {
   background-color: #0c0000;
   position: fixed;

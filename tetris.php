@@ -27,7 +27,7 @@
         }
         $id = $_GET["lang"];
         if(file_exists("languages/".$id.".php")){
-            include("languages/".$id.".php");
+            require_once("languages/".$id.".php");
         }
     ?>
     <div id="particles-js"></div>

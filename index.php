@@ -49,7 +49,7 @@
         }
         $id = $_GET["lang"];
         if(file_exists("languages/".$id.".php")){
-            include("languages/".$id.".php");
+            require_once("languages/".$id.".php");
         }
     ?>
     <div id="particles-js"></div>
@@ -67,7 +67,7 @@
         <div id="main">
             <div class="jumbotron">
                 <h1><a href="index.php">E-games</a></h1>
-                <nav class="nav-color navbar navbar-expand-lg navbar-light bg-default">
+                <nav class="nav-color navbar navbar-expand-lg navbar-light bg-default" role="navigation">
                     <a class="navbar-brand" href="aboutTheSite.php">
                         <?php echo $menu[0] ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,6 +119,7 @@
                     </div>
                 </div>
                 <hr />
+                <div class="text-center" id="show">0px</div>
                 <!-- slider -->
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
